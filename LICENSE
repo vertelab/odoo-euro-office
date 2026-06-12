@@ -1,0 +1,19 @@
+GNU LESSER GENERAL PUBLIC LICENSE
+Version 3, 29 June 2007
+
+This module is distributed under the GNU Lesser General Public License
+version 3 (LGPL-3.0). The full license text is available at:
+
+    https://www.gnu.org/licenses/lgpl-3.0.html
+
+Original work: ONLYOFFICE Odoo connector
+    (c) Copyright Ascensio System SIA 2024
+    https://github.com/ONLYOFFICE/onlyoffice_odoo
+
+Modifications: Euro-Office Connector
+    (c) Copyright Innolabs.dev 2026
+    https://github.com/innolabsdev/euro_office_odoo
+
+In accordance with LGPL-3.0, original copyright notices have been preserved
+in source file headers; files modified by Innolabs carry an additional
+modification notice.

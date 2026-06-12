@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+    <t t-name="euro_office_odoo.Editor" owl="1">
+    <html>
+      <head>
+        <meta charset="UTF-8" />
+        <title> Euro-Office </title>
+        <style>
+          html, body {
+            height: 100%;
+          }
+        </style>
+      </head>
+      <body class="o-euro_office-documents">
+        <div id="doceditor" />
+        <div id="error" class="w-25 m-auto my-5 py-5 d-flex flex-column d-none">
+          <img src="/euro_office_odoo/static/svg/euro_office_logo.svg" alt="Euro-Office logo" />
+          <div class="my-3 alert alert-danger">
+            <p> Euro-Office cannot be reached. Please contact admin. </p>
+          </div>
+        </div>
+      </body>
+    </html>
+  </t>
+</templates>
