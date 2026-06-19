@@ -23,9 +23,12 @@ def valid_url(url):
 
 
 def settings_validation(self):
-    base_url = self.doc_server_odoo_url
-    public_url = self.doc_server_public_url
-    inner_url = self.doc_server_inner_url
+    # Empty Char fields come back as False (Odoo), not "" — the Odoo-address
+    # field is normally left blank, in which case its effective value is
+    # web.base.url. Resolve it so the mixed-content check has a real string.
+    base_url = self.doc_server_odoo_url or self.env["ir.config_parameter"].sudo().get_param("web.base.url") or ""
+    public_url = self.doc_server_public_url or ""
+    inner_url = self.doc_server_inner_url or ""
     jwt_secret = self.doc_server_jwt_secret
     jwt_header = self.doc_server_jwt_header
     disable_certificate = self.doc_server_disable_certificate
@@ -42,6 +45,8 @@ def settings_validation(self):
 
 
 def check_mixed_content(base_url, url, demo):
+    base_url = base_url or ""
+    url = url or ""
     if base_url.startswith("https") and not url.startswith("https"):
         get_message_error("Mixed Active Content is not allowed. HTTPS address for Document Server is required.", demo)
 
