@@ -204,7 +204,7 @@ class EuroOffice_Connector(http.Controller):
         response_json = {"error": 0}
 
         try:
-            body = request.get_json_data()
+            body = json.loads(request.httprequest.data)
             user = self.get_user_from_token(oo_security_token)
             attachment = self.get_attachment(attachment_id, user)
             if not attachment:
