@@ -90,7 +90,7 @@ def euro_office_request(url, method, opts=None):
 
 
 class EuroOffice_Connector(http.Controller):
-    @http.route("/euro_office/editor/get_config", auth="user", methods=["POST"], type="jsonrpc", csrf=False)
+    @http.route("/euro_office/editor/get_config", auth="user", methods=["POST"], type="json", csrf=False)
     def get_config(self, document_id=None, attachment_id=None, access_token=None):
         _logger.info("POST /euro_office/editor/get_config - document: %s, attachment: %s", document_id, attachment_id)
         document = None
@@ -518,7 +518,7 @@ class EuroOfficeOFormsDocumentsController(http.Controller):
             _logger.error(f"API request failed to {url}: {str(e)}")
             raise UserError(f"Failed to connect to Forms API: {str(e)}") from e
 
-    @http.route("/euro_office/oforms/locales", type="jsonrpc", auth="user")
+    @http.route("/euro_office/oforms/locales", type="json", auth="user")
     def get_oform_locales(self):
         url = self.OFORMS_URL
         endpoint = "i18n/locales"
@@ -534,7 +534,7 @@ class EuroOfficeOFormsDocumentsController(http.Controller):
             ]
         }
 
-    @http.route("/euro_office/oforms/category-types", type="jsonrpc", auth="user")
+    @http.route("/euro_office/oforms/category-types", type="json", auth="user")
     def get_category_types(self, locale="en"):
         url = self.OFORMS_URL
         endpoint = "menu-translations"
@@ -564,7 +564,7 @@ class EuroOfficeOFormsDocumentsController(http.Controller):
 
         return {"data": categories}
 
-    @http.route("/euro_office/oforms/subcategories", type="jsonrpc", auth="user")
+    @http.route("/euro_office/oforms/subcategories", type="json", auth="user")
     def get_subcategories(self, category_type, locale="en"):
         url = self.OFORMS_URL
         endpoint_map = {"categorie": "categories", "type": "types", "compilation": "compilations"}
@@ -598,7 +598,7 @@ class EuroOfficeOFormsDocumentsController(http.Controller):
 
         return {"data": subcategories}
 
-    @http.route("/euro_office/oforms", type="jsonrpc", auth="user")
+    @http.route("/euro_office/oforms", type="json", auth="user")
     def get_oforms(self, params=None, **kwargs):
         url = self.CMSOFORMS_URL
         if params is None:
