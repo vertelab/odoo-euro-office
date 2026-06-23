@@ -13,6 +13,7 @@
     "data": [
         "views/templates.xml",
         "views/res_config_settings_views.xml",
+            "views/menu.xml",
     ],
     "license": "LGPL-3",
     "support": "hello@innolabs.dev",

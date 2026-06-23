@@ -1,54 +1,40 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<!-- -->
-<!-- (c) Copyright Ascensio System SIA 2024 -->
-<!-- Modified by Innolabs.dev 2026: Euro-Office rebrand, swapped-field fix, -->
-<!-- settings trimmed to functional options only. -->
-<!-- -->
 <odoo>
   <record id="res_config_settings_view_form" model="ir.ui.view">
-    <field name="name">res.config.settings.view.form.inherit.euro_office_odoo</field>
+    <field name="name">res.config.settings.view.form.inherit.document_euro_office</field>
     <field name="model">res.config.settings</field>
     <field name="priority" eval="10" />
     <field name="inherit_id" ref="base.res_config_settings_view_form" />
     <field name="arch" type="xml">
       <xpath expr="//form" position="inside">
-        <app data-string="Euro-Office" string="Euro-Office" name="euro_office_odoo" groups="base.group_system">
-          <block title="Euro-Office Docs" name="euro_office_odoo">
-            <setting string="Document Server address"
-                     help="Public URL of your Euro-Office DocumentServer, reachable from users' browsers.">
+        <app data-string="Euro-Office" string="Euro-Office" name="document_euro_office" groups="base.group_system">
+          <block title="Euro-Office Docs" name="document_euro_office">
+            <setting string="Document Server address" help="Public URL of your Euro-Office DocumentServer, reachable from users' browsers.">
               <field name="doc_server_public_url" />
             </setting>
             <br />
-            <setting string="Secret key (JWT)"
-                     help="Must match the JWT secret configured on the Document Server.">
+            <setting string="Secret key (JWT)" help="Must match the JWT secret configured on the Document Server.">
               <field name="doc_server_jwt_secret" password="True" />
             </setting>
             <br />
-            <setting string="JWT Header"
-                     help="HTTP header carrying the JWT. Leave empty for the default (Authorization).">
+            <setting string="JWT Header" help="HTTP header carrying the JWT. Leave empty for the default (Authorization).">
               <field name="doc_server_jwt_header" />
             </setting>
             <br />
-            <setting string="Disable certificate verification"
-                     help="Only for self-signed certificates on test setups.">
+            <setting string="Disable certificate verification" help="Only for self-signed certificates on test setups.">
               <field name="doc_server_disable_certificate" />
             </setting>
           </block>
-          <block title="Advanced networking" name="euro_office_odoo_advanced">
-            <!-- Upstream bug fixed here: these two fields were swapped under
-                 their labels, making users put the Document Server URL into
-                 doc_server_odoo_url (the address Docs uses to reach Odoo). -->
-            <setting string="Document Server address for requests from Odoo"
-                     help="Internal URL Odoo uses to reach the Document Server. Leave empty to use the public address.">
+          <block title="Advanced networking" name="document_euro_office_advanced">
+            <setting string="Document Server address for requests from Odoo" help="Internal URL Odoo uses to reach the Document Server. Leave empty to use the public address.">
               <field name="doc_server_inner_url" />
             </setting>
             <br />
-            <setting string="Odoo address for requests from the Document Server"
-                     help="URL the Document Server uses to download files from Odoo. Leave empty to use this instance's base URL.">
+            <setting string="Odoo address for requests from the Document Server" help="URL the Document Server uses to download files from Odoo. Leave empty to use this instance's base URL.">
               <field name="doc_server_odoo_url" />
             </setting>
           </block>
-          <block title="Behavior" name="euro_office_odoo_behavior">
+          <block title="Behavior" name="document_euro_office_behavior">
             <setting string="Open file in the same tab">
               <field name="same_tab" />
             </setting>
@@ -59,12 +45,12 @@
   </record>
 
   <record id="action_euro_office_config_settings" model="ir.actions.act_window">
-    <field name="name">Settings</field>
+    <field name="name">Euro-Office Settings</field>
     <field name="type">ir.actions.act_window</field>
     <field name="res_model">res.config.settings</field>
     <field name="view_id" ref="res_config_settings_view_form" />
     <field name="view_mode">form</field>
     <field name="target">current</field>
-    <field name="context">{'module' : 'euro_office_odoo'}</field>
+    <field name="context">{"module": "document_euro_office"}</field>
   </record>
 </odoo>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <menuitem
+        id="menu_euro_office_settings"
+        name="Euro-Office"
+        parent="base.menu_custom"
+        action="action_euro_office_config_settings"
+        sequence="50"
+    />
+</odoo>
