@@ -33,7 +33,7 @@ class DmsEuroOfficeController(http.Controller):
             _logger.info("Creating attachment for DMS file %s", dms_file_id)
             attachment = request.env["ir.attachment"].sudo().create({
                 "name": dms_file.name,
-                "raw": dms_file.with_context(bin_size=False).content,
+                "datas": dms_file.with_context(bin_size=False).content,
                 "mimetype": dms_file.mimetype or "application/octet-stream",
                 "res_model": "dms.file",
                 "res_id": dms_file_id,
