@@ -4,7 +4,7 @@
 
 import os
 
-from odoo.addons.euro_office_odoo.utils import format_utils
+from odoo.addons.document_euro_office.utils import format_utils
 
 
 def get_file_title_without_ext(name):
@@ -41,7 +41,7 @@ def can_view(context):
 def can_edit(context):
     for supported_format in format_utils.get_supported_formats():
         if supported_format.name == get_file_ext(context):
-            if "edit" in supported_format.actions:
+            if "edit" in supported_format.actions or "lossy-edit" in supported_format.actions or "auto-convert" in supported_format.actions:
                 return True
 
     return False
