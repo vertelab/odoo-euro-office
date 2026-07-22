@@ -43,15 +43,19 @@ class ResConfigSettings(models.TransientModel):
     def set_values(self):
         res = super().set_values()
 
-        current_demo_state = config_utils.get_demo(self.env)
+        # ir.config_parameter returns strings ("True"), while the form fields
+        # are real booleans — coerce before comparing, otherwise
+        # settings_changed is always True once a toggle has been enabled and
+        # the server validation below blocks every unrelated settings save.
+        current_demo_state = bool(config_utils.get_demo(self.env))
         current_public_url = config_utils.get_doc_server_public_url(self.env)
         current_odoo_url = config_utils.get_base_or_odoo_url(self.env)
         current_inner_url = config_utils.get_doc_server_inner_url(self.env)
         current_jwt_secret = config_utils.get_jwt_secret(self.env)
         current_jwt_header = config_utils.get_jwt_header(self.env)
-        current_disable_certificate = config_utils.get_certificate_verify_disabled(self.env)
+        current_disable_certificate = bool(config_utils.get_certificate_verify_disabled(self.env))
 
-        current_same_tab = config_utils.get_same_tab(self.env)
+        current_same_tab = bool(config_utils.get_same_tab(self.env))
 
         settings_changed = (
             self.doc_server_public_url != current_public_url
