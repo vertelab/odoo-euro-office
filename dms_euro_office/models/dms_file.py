@@ -25,7 +25,7 @@ class DmsFile(models.Model):
         """Return an action to open this file in Euro-Office."""
         self.ensure_one()
         same_tab = self.env["ir.config_parameter"].sudo().get_param(
-            "document_euro_office.same_tab", "False"
+            "euro_office.same_tab", "False"
         )
         url = f"/dms_euro_office/open/{self.id}"
         return {

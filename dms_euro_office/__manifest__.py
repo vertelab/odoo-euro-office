@@ -6,7 +6,7 @@
     "website": "https://vertel.se",
     "category": "Productivity",
     "version": "18.0.1.0.0",
-    "depends": ["dms", "document_euro_office"],
+    "depends": ["dms", "euro_office"],
     "data": [
         "views/dms_file_views.xml",
         "security/ir.model.access.csv",
