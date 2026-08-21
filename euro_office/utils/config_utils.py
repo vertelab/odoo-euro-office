@@ -5,7 +5,7 @@
 import uuid
 from datetime import date
 
-from odoo.addons.euro_office_odoo.utils import config_constants
+from odoo.addons.euro_office.utils import config_constants
 
 
 def get_base_or_odoo_url(env):

@@ -2,7 +2,7 @@ import json
 
 from odoo import api, models
 
-from odoo.addons.euro_office_odoo.utils import config_constants
+from odoo.addons.euro_office.utils import config_constants
 
 
 class EuroOfficeTemplate(models.Model):

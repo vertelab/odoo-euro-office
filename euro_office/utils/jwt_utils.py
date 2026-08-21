@@ -6,7 +6,7 @@ import datetime
 
 import jwt
 
-from odoo.addons.euro_office_odoo.utils import config_utils
+from odoo.addons.euro_office.utils import config_utils
 
 
 def is_jwt_enabled(env):

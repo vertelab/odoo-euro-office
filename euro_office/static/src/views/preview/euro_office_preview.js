@@ -3,7 +3,7 @@
 import { Component, onMounted, onWillUnmount } from "@odoo/owl"
 
 export class EuroOfficePreview extends Component {
-  static template = "euro_office_odoo.EuroOfficePreview"
+  static template = "euro_office.EuroOfficePreview"
 
   static props = {
     close: Function,

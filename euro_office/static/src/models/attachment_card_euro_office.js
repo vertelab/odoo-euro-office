@@ -14,7 +14,7 @@ import { patch } from "@web/core/utils/patch"
 let formats = []
 const loadFormats = async () => {
   try {
-    const data = await fetch("/euro_office_odoo/static/assets/document_formats/euro-office-docs-formats.json")
+    const data = await fetch("/euro_office/static/assets/document_formats/euro-office-docs-formats.json")
     formats = await data.json()
   } catch (error) {
     console.error("Error loading formats data:", error)

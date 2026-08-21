@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <templates xml:space="preserve">
-<t t-name="euro_office_odoo.FormGallery" owl="1">
+<t t-name="euro_office.FormGallery" owl="1">
     <Dialog title="title" size="'xl'" footer="true">
       <div class="container-fluid">
         <div class="row mb-3" t-if="!state.loading and !state.error and state.total > state.limit">

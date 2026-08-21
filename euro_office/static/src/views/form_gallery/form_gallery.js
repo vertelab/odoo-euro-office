@@ -1,5 +1,5 @@
 /** @odoo-module **/
-import { EuroOfficePreview } from "@euro_office_odoo/views/preview/euro_office_preview"
+import { EuroOfficePreview } from "@euro_office/views/preview/euro_office_preview"
 import { Dialog } from "@web/core/dialog/dialog"
 import { Dropdown } from "@web/core/dropdown/dropdown"
 import { DropdownItem } from "@web/core/dropdown/dropdown_item"
@@ -11,7 +11,7 @@ import { useService } from "@web/core/utils/hooks"
 const { Component, useState, onWillStart, onWillUnmount } = owl
 
 export class FormGallery extends Component {
-  static template = "euro_office_odoo.FormGallery"
+  static template = "euro_office.FormGallery"
 
   static components = {
     Dialog,

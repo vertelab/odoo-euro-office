@@ -6,7 +6,7 @@
     "author": "Innolabs.dev",
     "website": "https://github.com/innolabsdev/euro_office_odoo",
     "category": "Productivity",
-    "version": "19.0.6.3.2",
+    "version": "19.0.6.3.3",
     "depends": ["base", "mail"],
     "external_dependencies": {"python": ["pyjwt"]},
     # always loaded
@@ -27,11 +27,11 @@
     "application": True,
     "assets": {
         "web.assets_backend": [
-            "euro_office_odoo/static/src/actions/*",
-            "euro_office_odoo/static/src/components/*/*.xml",
-            "euro_office_odoo/static/src/models/*.js",
-            "euro_office_odoo/static/src/views/**/*",
-            "euro_office_odoo/static/src/css/*",
+            "euro_office/static/src/actions/*",
+            "euro_office/static/src/components/*/*.xml",
+            "euro_office/static/src/models/*.js",
+            "euro_office/static/src/views/**/*",
+            "euro_office/static/src/css/*",
         ],
     },
 }

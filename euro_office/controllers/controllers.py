@@ -19,7 +19,7 @@ from odoo import _, fields, http
 from odoo.exceptions import AccessError, UserError
 from odoo.http import request
 
-from odoo.addons.euro_office_odoo.utils import config_utils, file_utils, jwt_utils, url_utils
+from odoo.addons.euro_office.utils import config_utils, file_utils, jwt_utils, url_utils
 
 _logger = logging.getLogger(__name__)
 _mobile_regex = r"android|avantgo|playbook|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od|ad)|iris|kindle|lge |maemo|midp|mmp|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\\/|plucker|pocket|psp|symbian|treo|up\\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino"  # noqa: E501
@@ -193,7 +193,7 @@ class EuroOffice_Connector(http.Controller):
 
         _logger.info("GET /euro_office/editor/%s - success", attachment_id)
         return request.render(
-            "euro_office_odoo.euro_office_editor", self.prepare_editor_values(attachment, access_token, can_write)
+            "euro_office.euro_office_editor", self.prepare_editor_values(attachment, access_token, can_write)
         )
 
     @http.route(
@@ -326,7 +326,7 @@ class EuroOffice_Connector(http.Controller):
         _logger.info("prepare_editor_values - success: %s", attachment.id)
         return {
             "docTitle": filename,
-            "docIcon": f"/euro_office_odoo/static/description/editor_icons/{document_type}.ico",
+            "docIcon": f"/euro_office/static/description/editor_icons/{document_type}.ico",
             "docApiJS": docserver_url + "web-apps/apps/api/documents/api.js",
             "editorConfig": markupsafe.Markup(json.dumps(root_config)),
         }
@@ -487,10 +487,10 @@ class EuroOffice_Connector(http.Controller):
 
         _logger.info("GET /euro_office/preview - success")
         return request.render(
-            "euro_office_odoo.euro_office_editor",
+            "euro_office.euro_office_editor",
             {
                 "docTitle": title,
-                "docIcon": f"/euro_office_odoo/static/description/editor_icons/{document_type}.ico",
+                "docIcon": f"/euro_office/static/description/editor_icons/{document_type}.ico",
                 "docApiJS": docserver_url + "web-apps/apps/api/documents/api.js",
                 "editorConfig": markupsafe.Markup(json.dumps(root_config)),
             },

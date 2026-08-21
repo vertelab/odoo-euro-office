@@ -11,7 +11,7 @@ The repository is used in:
 * [Euro-Office app for Mattermost](https://github.com/Euro-Office/euro_office-mattermost)
 * [Euro-Office app for Miro](https://github.com/Euro-Office/euro_office-miro)
 * [Euro-Office app for Nextcloud](https://github.com/Euro-Office/euro_office-nextcloud)
-* [Euro-Office app for Odoo](https://github.com/Euro-Office/euro_office_odoo)
+* [Euro-Office app for Odoo](https://github.com/Euro-Office/euro_office)
 * [Euro-Office app for ownCloud](https://github.com/Euro-Office/euro_office-owncloud)
 * [Euro-Office app for Slack](https://github.com/Euro-Office/euro_office-slack)
 * [Euro-Office bot for Telegram](https://github.com/Euro-Office/euro_office-telegram)

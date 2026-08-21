@@ -4,7 +4,7 @@
 
 import os
 
-from odoo.addons.euro_office_odoo.utils import format_utils
+from odoo.addons.euro_office.utils import format_utils
 
 
 def get_file_title_without_ext(name):

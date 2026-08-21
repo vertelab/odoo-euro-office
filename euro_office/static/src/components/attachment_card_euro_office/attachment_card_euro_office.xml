@@ -11,7 +11,7 @@
         class="btn bg-500 w-100 h-100 o-p-1_5 d-flex justify-content-center align-items-center shadow-sm ms-2"
         title="Open in Euro-Office"
       >
-        <img src="/euro_office_odoo/static/svg/edit.svg" role="img" width="16" height="16" />
+        <img src="/euro_office/static/svg/edit.svg" role="img" width="16" height="16" />
       </button>
     </xpath>
   </t>

@@ -65,6 +65,6 @@ export class DocumentsAction extends Component {
   }
 }
 
-DocumentsAction.template = "euro_office_odoo.Editor"
+DocumentsAction.template = "euro_office.Editor"
 
 registry.category("actions").add("euro_office_editor", DocumentsAction, { force: true })

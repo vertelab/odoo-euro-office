@@ -4,7 +4,7 @@
 
 from odoo import api, fields, models
 
-from odoo.addons.euro_office_odoo.utils import config_utils, validation_utils
+from odoo.addons.euro_office.utils import config_utils, validation_utils
 
 
 class ResConfigSettings(models.TransientModel):

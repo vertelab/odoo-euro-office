@@ -1,6 +1,6 @@
 import logging
 
-from odoo.addons.euro_office_odoo.utils import config_utils
+from odoo.addons.euro_office.utils import config_utils
 
 _logger = logging.getLogger(__name__)
 

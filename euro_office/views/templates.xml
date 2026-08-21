@@ -38,10 +38,10 @@
   </template>
 
   <template id="euro_office_editor" name="Euro-Office Editor">
-    <t t-call="euro_office_odoo.euro_office_layout">
+    <t t-call="euro_office.euro_office_layout">
       <div id="doceditor" />
       <div id="error" class="w-25 m-auto my-5 py-5 d-flex flex-column d-none">
-        <img src="/euro_office_odoo/static/svg/logo.svg" alt="Euro-Office logo" />
+        <img src="/euro_office/static/svg/logo.svg" alt="Euro-Office logo" />
         <div class="my-3 alert alert-danger">
           <p> Euro-Office cannot be reached. Please contact admin. </p>
         </div>

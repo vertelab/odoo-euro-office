@@ -8,7 +8,7 @@ import requests
 
 from odoo.exceptions import ValidationError
 
-from odoo.addons.euro_office_odoo.utils import jwt_utils
+from odoo.addons.euro_office.utils import jwt_utils
 
 
 def valid_url(url):
