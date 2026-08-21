@@ -6,7 +6,7 @@
     "author": "Innolabs.dev",
     "website": "https://github.com/innolabsdev/euro_office_odoo",
     "category": "Productivity",
-    "version": "18.0.6.3.3",
+    "version": "18.0.6.3.4",
     "depends": ["base", "mail"],
     "external_dependencies": {"python": ["pyjwt"]},
     # always loaded
