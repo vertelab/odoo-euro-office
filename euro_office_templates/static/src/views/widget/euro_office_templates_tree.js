@@ -2,7 +2,7 @@
 // Copyright (C) 2026 Ascensio System SIA
 
 import { Component, useState, onWillStart } from "@odoo/owl"
-import { OnlyofficePreview } from "@euro_office/views/preview/euro_office_preview"
+import { EuroOfficePreview } from "@euro_office/views/preview/euro_office_preview"
 import { registry } from "@web/core/registry"
 import { useService } from "@web/core/utils/hooks"
 
@@ -60,7 +60,7 @@ export class TemplatesTree extends Component {
     const url = `/euro_office/template/template_content/${encodeURIComponent(path.replace("/", "_"))}`
 
     this.env.services.dialog.add(
-      OnlyofficePreview,
+      EuroOfficePreview,
       {
         close: () => {
           this.env.services.dialog.close()

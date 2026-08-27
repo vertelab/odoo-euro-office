@@ -2,9 +2,9 @@
 // Copyright (C) 2026 Ascensio System SIA
 
 import { KanbanRenderer } from "@web/views/kanban/kanban_renderer"
-import { OnlyofficeKanbanRecord } from "./euro_office_kanban_record"
+import { EuroOfficeKanbanRecord } from "./euro_office_kanban_record"
 
-export class OnlyofficeKanbanRenderer extends KanbanRenderer {
+export class EuroOfficeKanbanRenderer extends KanbanRenderer {
   setup() {
     super.setup(...arguments)
   }
@@ -24,7 +24,7 @@ export class OnlyofficeKanbanRenderer extends KanbanRenderer {
   }
 }
 
-OnlyofficeKanbanRenderer.components = {
+EuroOfficeKanbanRenderer.components = {
   ...KanbanRenderer.components,
-  KanbanRecord: OnlyofficeKanbanRecord,
+  KanbanRecord: EuroOfficeKanbanRecord,
 }

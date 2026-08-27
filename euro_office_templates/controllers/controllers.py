@@ -16,14 +16,14 @@ from odoo.tools import (
     misc,
 )
 
-from odoo.addons.euro_office.controllers.controllers import Onlyoffice_Connector, euro_office_request
+from odoo.addons.euro_office.controllers.controllers import EuroOffice_Connector, euro_office_request
 from odoo.addons.euro_office.utils import config_utils, file_utils, jwt_utils, url_utils
 from odoo.addons.euro_office_templates.utils import config_utils as templates_config_utils
 
 logger = logging.getLogger(__name__)
 
 
-class Onlyoffice_Inherited_Connector(Onlyoffice_Connector):
+class EuroOffice_Inherited_Connector(EuroOffice_Connector):
     @http.route("/euro_office/template/template_content/<string:path>", auth="public")
     def get_template_content(self, path):
         try:
@@ -61,7 +61,7 @@ class Onlyoffice_Inherited_Connector(Onlyoffice_Connector):
         return prepare_editor_values
 
 
-class OnlyofficeTemplate_Connector(http.Controller):
+class EuroOfficeTemplate_Connector(http.Controller):
     @http.route("/euro_office/template/fill", auth="user", type="http")
     def main(self, template_id, record_ids):
         logger.info("GET /euro_office/template/fill - template: %s, records: %s", template_id, record_ids)

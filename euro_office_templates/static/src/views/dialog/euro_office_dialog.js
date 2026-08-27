@@ -1,7 +1,7 @@
 /** @odoo-module **/
 // Copyright (C) 2026 Ascensio System SIA
 
-import { OnlyofficePreview } from "@euro_office/views/preview/euro_office_preview"
+import { EuroOfficePreview } from "@euro_office/views/preview/euro_office_preview"
 import { AlertDialog } from "@web/core/confirmation_dialog/confirmation_dialog"
 import { Dialog } from "@web/core/dialog/dialog"
 import { useHotkey } from "@web/core/hotkeys/hotkey_hook"
@@ -195,7 +195,7 @@ export class TemplateDialog extends Component {
     const url = `/euro_office/file/content/${t.attachment_id[0]}`
 
     this.env.services.dialog.add(
-      OnlyofficePreview,
+      EuroOfficePreview,
       {
         close: () => {
           this.env.services.dialog.close()

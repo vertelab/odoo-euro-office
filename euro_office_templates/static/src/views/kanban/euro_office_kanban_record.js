@@ -4,7 +4,7 @@
 import { useService } from "@web/core/utils/hooks"
 import { KanbanRecord } from "@web/views/kanban/kanban_record"
 
-export class OnlyofficeKanbanRecord extends KanbanRecord {
+export class EuroOfficeKanbanRecord extends KanbanRecord {
   setup() {
     super.setup(...arguments)
     this.orm = useService("orm")

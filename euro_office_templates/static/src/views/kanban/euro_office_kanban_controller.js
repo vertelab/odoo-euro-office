@@ -6,7 +6,7 @@ import { useService } from "@web/core/utils/hooks"
 import { KanbanController } from "@web/views/kanban/kanban_controller"
 import { HelpDialog } from "./euro_office_dialog_help"
 
-export class OnlyofficeKanbanController extends KanbanController {
+export class EuroOfficeKanbanController extends KanbanController {
   setup() {
     super.setup()
     this.action = useService("action")

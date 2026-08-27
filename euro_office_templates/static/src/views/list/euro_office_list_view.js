@@ -17,7 +17,7 @@ patch(ListController.prototype, {
   // eslint-disable-next-line sort-keys
   getStaticActionMenuItems() {
     const menuItems = super.getStaticActionMenuItems()
-    menuItems.printWithOnlyoffice = {
+    menuItems.printWithEuroOffice = {
       callback: async () => {
         this.env.services.dialog.add(TemplateDialog, {
           resId: await this.model.root.getResIds(true),

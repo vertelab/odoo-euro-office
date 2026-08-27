@@ -3,13 +3,13 @@
 
 import { registry } from "@web/core/registry"
 import { kanbanView } from "@web/views/kanban/kanban_view"
-import { OnlyofficeKanbanController } from "./euro_office_kanban_controller"
-import { OnlyofficeKanbanRenderer } from "./euro_office_kanban_renderer"
+import { EuroOfficeKanbanController } from "./euro_office_kanban_controller"
+import { EuroOfficeKanbanRenderer } from "./euro_office_kanban_renderer"
 
 export const euro_officeKanbanView = {
   ...kanbanView,
-  Controller: OnlyofficeKanbanController,
-  Renderer: OnlyofficeKanbanRenderer,
+  Controller: EuroOfficeKanbanController,
+  Renderer: EuroOfficeKanbanRenderer,
   buttonTemplate: "euro_office_templates.KanbanView.Buttons",
 }
 

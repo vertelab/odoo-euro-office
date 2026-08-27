@@ -15,7 +15,7 @@ patch(FormController.prototype, {
   getStaticActionMenuItems() {
     const { activeActions } = this.archInfo
     const menuItems = super.getStaticActionMenuItems(...arguments)
-    menuItems.printWithOnlyoffice = {
+    menuItems.printWithEuroOffice = {
       callback: () => {
         this.env.services.dialog.add(TemplateDialog, {
           resId: this.model.root.resId,
