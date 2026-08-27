@@ -1,0 +1,23 @@
+.o_euro_office_kanban_record_selected {
+  border-color: #017e84;
+  box-shadow: 0 0 0 2px #017e84;
+}
+
+.o-euro_office-folder-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.o-euro_office-folder-item {
+  cursor: pointer;
+  transition: background-color 0.15s;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+}
+
+.o-euro_office-folder-selected {
+  background-color: #e8f4f5;
+  border-left: 3px solid #017e84;
+}

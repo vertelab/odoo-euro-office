@@ -1,0 +1,45 @@
+.o-euro_office-template {
+  display: flex;
+
+  .o-euro_office-template-fields {
+    width: 320px;
+    height: 100%;
+    background-color: var(--body-bg) !important;
+    font-family: Arial !important;
+    font-weight: 400 !important;
+    font-size: 11px !important;
+    line-height: 14px !important;
+    letter-spacing: 2% !important;
+
+    .o-euro_office-fields-title {
+      display: flex;
+      align-items: center;
+      height: 54px;
+      padding: 0 12px;
+      align-items: center;
+
+      font-family: Arial;
+      font-weight: 700;
+      font-size: 11px;
+      line-height: 16px;
+      letter-spacing: 2%;
+      vertical-align: middle;
+    }
+
+    .o-euro_office-template-separator {
+      width: 100%;
+      margin: 0;
+      border-color: var(--gray-300);
+    }
+  }
+
+  .o-euro_office-template-editor {
+    width: calc(100% - 320px);
+    height: 100%;
+
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

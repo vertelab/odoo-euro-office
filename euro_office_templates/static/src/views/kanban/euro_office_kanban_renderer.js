@@ -1,0 +1,30 @@
+/** @odoo-module **/
+// Copyright (C) 2026 Ascensio System SIA
+
+import { KanbanRenderer } from "@web/views/kanban/kanban_renderer"
+import { OnlyofficeKanbanRecord } from "./euro_office_kanban_record"
+
+export class OnlyofficeKanbanRenderer extends KanbanRenderer {
+  setup() {
+    super.setup(...arguments)
+  }
+
+  /**
+   * @override
+   **/
+  canQuickCreate() {
+    return false
+  }
+
+  /**
+   * @override
+   **/
+  canCreateGroup() {
+    return false
+  }
+}
+
+OnlyofficeKanbanRenderer.components = {
+  ...KanbanRenderer.components,
+  KanbanRecord: OnlyofficeKanbanRecord,
+}

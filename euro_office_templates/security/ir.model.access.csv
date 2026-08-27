@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_euro_office_templates_user,OnlyOffice Template User Access,euro_office_templates.model_euro_office_templates,group_euro_office_templates_user,1,0,0,0
+access_euro_office_templates_admin,OnlyOffice Template Admin Access,euro_office_templates.model_euro_office_templates,group_euro_office_templates_admin,1,1,1,1
+access_euro_office_templates,OnlyOffice Template,euro_office_templates.model_euro_office_templates,,0,0,0,0
+access_euro_office_demo_templates,euro_office.demo.templates.access,model_euro_office_demo_templates,base.group_system,1,1,1,1

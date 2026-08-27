@@ -1,0 +1,525 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* euro_office_templates
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0+e-20250520\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-12 16:22+0000\n"
+"PO-Revision-Date: 2025-11-12 16:22+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n > 1);"
+
+#. module: euro_office_templates
+#. odoo-javascript
+#: code:addons/euro_office_templates/static/src/views/kanban/euro_office_dialog_help.xml:0
+msgid ""
+", select the desired Odoo module, and create or upload a PDF template with "
+"fillable fields."
+msgstr ", sélectionnez le module Odoo souhaité et créez ou téléchargez un modèle PDF avec des champs à remplir."
+
+#. module: euro_office_templates
+#: model:res.groups,name:euro_office_templates.group_euro_office_templates_admin
+msgid "Administrator"
+msgstr "Administrateur"
+
+#. module: euro_office_templates
+#: model:ir.model.fields,field_description:euro_office_templates.field_euro_office_templates__attachment_id
+msgid "Attachment"
+msgstr "Pièce jointe"
+
+#. module: euro_office_templates
+#: model:res.groups,comment:euro_office_templates.group_euro_office_templates_user
+msgid "Can open Euro-Office templates for viewing and print them."
+msgstr "Peut ouvrir des modèles Euro-Office pour les afficher et les imprimer."
+
+#. module: euro_office_templates
+#: model:res.groups,comment:euro_office_templates.group_euro_office_templates_admin
+msgid "Can open, create, edit and print Euro-Office templates."
+msgstr "Peut ouvrir, créer, éditer et imprimer des modèles Euro-Office."
+
+#. module: euro_office_templates
+#. odoo-javascript
+#: code:addons/euro_office_templates/static/src/views/dialog/euro_office_dialog.xml:0
+#: model_terms:ir.ui.view,arch_db:euro_office_templates.view_euro_office_demo_templates_form
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: euro_office_templates
+#: model_terms:ir.ui.view,arch_db:euro_office_templates.view_euro_office_demo_templates_form
+msgid ""
+"Check templates you want to export to the Euro-Office Templates module and press Export.\n"
+"          You can do this as many times as you need."
+msgstr "Cochez les modèles que vous souhaitez exporter vers le module Euro-Office Templates et cliquez sur Exporter. Vous pouvez effectuer cette opération autant de fois que nécessaire."
+
+#. module: euro_office_templates
+#: model_terms:ir.ui.view,arch_db:euro_office_templates.view_euro_office_form
+msgid ""
+"Choose the <span class=\"fw-bolder\">Odoo module </span>\n"
+"              (e.g., Employee, Invoice, Sales Order) that the template will be linked to. The chosen\n"
+"              model defines the data fields available for automatic form filling."
+msgstr ""
+"Choisissez le <span class=\"fw-bolder\">module Odoo </span>\n"
+"              (par ex. Employés, Facturation, Commande client) auquel le modèle sera lié. Le modèle choisi\n"
+"              définit les champs de données disponibles pour le remplissage automatique du formulaire."
+
+#. module: euro_office_templates
+#. odoo-javascript
+#: code:addons/euro_office_templates/static/src/views/editor/euro_office_editor_export_data.xml:0
+msgid "Choose the field below to paste selected parameter to the cursor"
+msgstr "Sélectionnez la zone ci-dessous pour coller le paramètre sélectionné au curseur"
+
+#. module: euro_office_templates
+#. odoo-javascript
+#: code:addons/euro_office_templates/static/src/views/kanban/euro_office_dialog_help.xml:0
+msgid "Choose the required template to fill in with Odoo data."
+msgstr "Choisissez le modèle requis à remplir avec les données Odoo."
+
+#. module: euro_office_templates
+#. odoo-javascript
+#: code:addons/euro_office_templates/static/src/views/kanban/euro_office_dialog_help.xml:0
+msgid "Click on the Action button."
+msgstr "Cliquez sur le bouton Action."
+
+#. module: euro_office_templates
+#: model:ir.model,name:euro_office_templates.model_res_config_settings
+msgid "Config Settings"
+msgstr "Paramètres de configuration"
+
+#. module: euro_office_templates
+#. odoo-javascript
+#: code:addons/euro_office_templates/static/src/views/editor/euro_office_editor.js:0
+msgid "Couldn't insert the field. Please check Automation API."
+msgstr "Impossible d'insérer le champ. Veuillez vérifier l'API d'automatisation."
+
+#. module: euro_office_templates
+#. odoo-javascript
+#: code:addons/euro_office_templates/static/src/views/kanban/euro_office_dialog_help.xml:0
+msgid "Create or Upload"
+msgstr "Créer ou télécharger"
+
+#. module: euro_office_templates
+#: model_terms:ir.ui.view,arch_db:euro_office_templates.view_euro_office_form
+msgid "Create template"
+msgstr "Créer un modèle"
+
+#. module: euro_office_templates
+#: model:ir.model.fields,field_description:euro_office_templates.field_euro_office_demo_templates__create_uid
+#: model:ir.model.fields,field_description:euro_office_templates.field_euro_office_templates__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: euro_office_templates
+#: model:ir.model.fields,field_description:euro_office_templates.field_euro_office_demo_templates__create_date
+#: model:ir.model.fields,field_description:euro_office_templates.field_euro_office_templates__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: euro_office_templates
+#: model_terms:ir.ui.view,arch_db:euro_office_templates.view_euro_office_kanban
+msgid "Delete"
+msgstr "Supprimer"
+
+#. module: euro_office_templates
+#: model:ir.model.fields,field_description:euro_office_templates.field_res_config_settings__editable_form_fields
+msgid "Disable form fields after printing PDF form"
+msgstr "Désactiver les champs du formulaire après l'impression du formulaire PDF"
+
+#. module: euro_office_templates
+#: model:ir.model.fields,field_description:euro_office_templates.field_euro_office_demo_templates__display_name
+#: model:ir.model.fields,field_description:euro_office_templates.field_euro_office_templates__display_name
+msgid "Display Name"
+msgstr "Afficher le nom"
+
+#. module: euro_office_templates
+#: model_terms:ir.ui.view,arch_db:euro_office_templates.view_euro_office_kanban
+msgid "Download"
+msgstr "Télécharger"
+
+#. module: euro_office_templates
+#: model_terms:ir.ui.view,arch_db:euro_office_templates.view_euro_office_kanban
+msgid "Edit"
+msgstr "Modifier"
+
+#. module: euro_office_templates
+#: model_terms:ir.ui.view,arch_db:euro_office_templates.view_euro_office_demo_templates_form
+msgid "Export"
+msgstr "Exporter"
+
+#. module: euro_office_templates
+#: model_terms:ir.ui.view,arch_db:euro_office_templates.res_config_settings_view_form
+msgid "Export templates to the Euro-Office Templates module"
+msgstr "Exporter des modèles vers le module Euro-Office Templates"
+
+#. module: euro_office_templates
+#. odoo-python
+#: code:addons/euro_office_templates/models/euro_office_templates.py:0
+msgid "Failed to download converted PDF form"
+msgstr "Échec du téléchargement du formulaire PDF converti"
+
+#. module: euro_office_templates
+#. odoo-python
+#: code:addons/euro_office_templates/models/euro_office_templates.py:0
+msgid "Failed to download form"
+msgstr "Échec du téléchargement du formulaire"
+
+#. module: euro_office_templates
+#. odoo-javascript
+#: code:addons/euro_office_templates/static/src/views/editor/euro_office_editor.xml:0
+msgid "Fields"
+msgstr "Champs"
+
+#. module: euro_office_templates
+#: model_terms:ir.ui.view,arch_db:euro_office_templates.res_config_settings_view_form
+msgid ""
+"Form fields cannot be filled in manually if they were not automatically "
+"filled in with data from Odoo"
+msgstr ""
+"Les champs du formulaire ne peuvent pas être remplis manuellement s'ils n'ont pas été remplis automatiquement\n"
+"                  avec les données d'Odoo"
+
+#. module: euro_office_templates
+#. odoo-javascript
+#: code:addons/euro_office_templates/static/src/views/kanban/euro_office_dialog_help.xml:0
+msgid "Go to the relevant Odoo module (e.g., Sales, Invoices)."
+msgstr "Accédez au module Odoo concerné (par ex. Ventes, Facturation)."
+
+#. module: euro_office_templates
+#: model_terms:ir.ui.view,arch_db:euro_office_templates.view_euro_office_kanban_search
+msgid "Group By"
+msgstr "Groupe par"
+
+#. module: euro_office_templates
+#. odoo-javascript
+#: code:addons/euro_office_templates/static/src/views/kanban/euro_office_dialog_help.js:0
+#: code:addons/euro_office_templates/static/src/views/kanban/euro_office_kanban_controller.xml:0
+msgid "Help"
+msgstr "Aide"
+
+#. module: euro_office_templates
+#: model:ir.model.fields,field_description:euro_office_templates.field_euro_office_templates__hide_file_field
+msgid "Hide File Field"
+msgstr "Masquer le champ Fichier"
+
+#. module: euro_office_templates
+#: model:ir.model.fields,field_description:euro_office_templates.field_euro_office_demo_templates__id
+#: model:ir.model.fields,field_description:euro_office_templates.field_euro_office_templates__id
+msgid "ID"
+msgstr "ID"
+
+#. module: euro_office_templates
+#: model_terms:ir.ui.view,arch_db:euro_office_templates.view_euro_office_form
+msgid ""
+"If you already have a <span class=\"fw-bolder\">prepared\n"
+"              PDF file</span> with fillable fields, you can upload it here"
+msgstr ""
+"Si vous disposez déjà d'un <span class=\"fw-bolder\">fichier PDF\n"
+"              prêt</span> avec des champs à remplir, vous pouvez le télécharger ici"
+
+#. module: euro_office_templates
+#. odoo-python
+#: code:addons/euro_office_templates/models/euro_office_templates.py:0
+msgid "Invalid file format."
+msgstr "Format de fichier non valide."
+
+#. module: euro_office_templates
+#: model:ir.model.fields,field_description:euro_office_templates.field_euro_office_demo_templates__write_uid
+#: model:ir.model.fields,field_description:euro_office_templates.field_euro_office_templates__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: euro_office_templates
+#: model:ir.model.fields,field_description:euro_office_templates.field_euro_office_demo_templates__write_date
+#: model:ir.model.fields,field_description:euro_office_templates.field_euro_office_templates__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: euro_office_templates
+#. odoo-javascript
+#: code:addons/euro_office_templates/static/src/views/widget/euro_office_templates_tree.xml:0
+msgid "Loading templates..."
+msgstr "Chargement des modèles..."
+
+#. module: euro_office_templates
+#: model_terms:ir.ui.view,arch_db:euro_office_templates.view_euro_office_form
+msgid ""
+"Locate your newly created template and set up the connections between the form\n"
+"                fields in the Euro-Office editor and the corresponding data fields from the selected\n"
+"                Odoo model."
+msgstr ""
+"Localisez votre modèle nouvellement créé et configurez les connexions entre les champs du formulaire\n"
+"                dans l'éditeur Euro-Office et les champs de données correspondants du modèle\n"
+"                Odoo sélectionné."
+
+#. module: euro_office_templates
+#: model:ir.actions.act_window,name:euro_office_templates.action_euro_office_demo_templates
+msgid "Manage Templates"
+msgstr "Gérer les modèles"
+
+#. module: euro_office_templates
+#: model_terms:ir.ui.view,arch_db:euro_office_templates.res_config_settings_view_form
+msgid "Manage templates"
+msgstr "Gérer les modèles"
+
+#. module: euro_office_templates
+#: model:ir.model.fields,field_description:euro_office_templates.field_euro_office_templates__mimetype
+msgid "Mimetype"
+msgstr "Mimetype"
+
+#. module: euro_office_templates
+#: model_terms:ir.ui.view,arch_db:euro_office_templates.view_euro_office_kanban_search
+msgid "Model"
+msgstr "Modèle"
+
+#. module: euro_office_templates
+#: model:ir.model.fields,field_description:euro_office_templates.field_euro_office_templates__template_model_name
+#: model:ir.model.fields,field_description:euro_office_templates.field_euro_office_templates__template_model_related_name
+msgid "Model Description"
+msgstr "Description du modèle"
+
+#. module: euro_office_templates
+#: model_terms:ir.ui.view,arch_db:euro_office_templates.view_euro_office_form
+msgid "Model for which the template is being created."
+msgstr "Modèle pour lequel le formulaire est créé."
+
+#. module: euro_office_templates
+#. odoo-javascript
+#: code:addons/euro_office_templates/static/src/views/editor/euro_office_editor_export_data.xml:0
+msgid "Module/ section"
+msgstr "Module/ section"
+
+#. module: euro_office_templates
+#. odoo-javascript
+#: code:addons/euro_office_templates/static/src/views/editor/euro_office_editor_export_data.xml:0
+msgid "No match found."
+msgstr "Aucune correspondance trouvée."
+
+#. module: euro_office_templates
+#: model:ir.model,name:euro_office_templates.model_euro_office_demo_templates
+msgid "Euro-Office Demo Templates"
+msgstr "Modèles de démonstration de Euro-Office"
+
+#. module: euro_office_templates
+#: model:ir.actions.act_window,name:euro_office_templates.action_euro_office_templates
+#: model:ir.model,name:euro_office_templates.model_euro_office_templates
+#: model:ir.ui.menu,name:euro_office_templates.euro_office_menu
+#: model_terms:ir.ui.view,arch_db:euro_office_templates.res_config_settings_view_form
+msgid "Euro-Office Templates"
+msgstr "Modèles Euro-Office"
+
+#. module: euro_office_templates
+#. odoo-javascript
+#: code:addons/euro_office_templates/static/src/views/kanban/euro_office_dialog_help.xml:0
+msgid "Euro-Office Templates module"
+msgstr "Module Euro-Office Templates"
+
+#. module: euro_office_templates
+#. odoo-javascript
+#: code:addons/euro_office_templates/static/src/views/editor/euro_office_editor.xml:0
+msgid "Euro-Office cannot be reached. Please contact admin."
+msgstr "Euro-Office n'est pas joignable. Veuillez contacter l'administration."
+
+#. module: euro_office_templates
+#. odoo-javascript
+#: code:addons/euro_office_templates/static/src/views/editor/euro_office_editor.xml:0
+msgid "Euro-Office logo"
+msgstr "Logo Euro-Office"
+
+#. module: euro_office_templates
+#: model:ir.module.category,name:euro_office_templates.module_category_euro_office_templates
+msgid "Euro-Office templates"
+msgstr "Modèles Euro-Office"
+
+#. module: euro_office_templates
+#. odoo-javascript
+#: code:addons/euro_office_templates/static/src/views/kanban/euro_office_dialog_help.xml:0
+msgid "Ok"
+msgstr "OK"
+
+#. module: euro_office_templates
+#. odoo-javascript
+#: code:addons/euro_office_templates/static/src/views/kanban/euro_office_dialog_help.xml:0
+msgid ""
+"On this page, you can create form templates for any Odoo module, such as "
+"Invoice, Receipt, Employee Leave Form, etc. Just click"
+msgstr "Sur cette page, vous pouvez créer des modèles de formulaires pour tout module Odoo, par exemple, Facture, Reçu, Formulaire de congé employé, etc. Il suffit de cliquer"
+
+#. module: euro_office_templates
+#: model_terms:ir.ui.view,arch_db:euro_office_templates.view_euro_office_form
+msgid ""
+"Once you've saved the template, return to the Euro-Office Templates list."
+msgstr "Une fois le modèle enregistré, retournez à la liste des modèles Euro-Office."
+
+#. module: euro_office_templates
+#. odoo-javascript
+#: code:addons/euro_office_templates/static/src/views/kanban/euro_office_kanban_controller.xml:0
+msgid "Open Document templates"
+msgstr "Ouvrir les modèles de documents"
+
+#. module: euro_office_templates
+#. odoo-javascript
+#: code:addons/euro_office_templates/static/src/views/kanban/euro_office_dialog_help.xml:0
+msgid "Open a record."
+msgstr "Ouvrir un enregistrement."
+
+#. module: euro_office_templates
+#. odoo-javascript
+#: code:addons/euro_office_templates/static/src/views/kanban/euro_office_dialog_help.xml:0
+msgid "Press the Print button."
+msgstr "Appuyez sur le bouton Imprimer."
+
+#. module: euro_office_templates
+#. odoo-javascript
+#: code:addons/euro_office_templates/static/src/views/dialog/euro_office_dialog.xml:0
+msgid "Preview"
+msgstr "Aperçu"
+
+#. module: euro_office_templates
+#. odoo-javascript
+#: code:addons/euro_office_templates/static/src/views/dialog/euro_office_dialog.xml:0
+msgid "Print"
+msgstr "Imprimer"
+
+#. module: euro_office_templates
+#. odoo-javascript
+#: code:addons/euro_office_templates/static/src/views/dialog/euro_office_dialog.js:0
+msgid "Print from template"
+msgstr "Imprimer à partir du modèle"
+
+#. module: euro_office_templates
+#. odoo-javascript
+#: code:addons/euro_office_templates/static/src/views/form/euro_office_form_view.js:0
+#: code:addons/euro_office_templates/static/src/views/list/euro_office_list_view.js:0
+msgid "Print with Euro-Office"
+msgstr "Imprimer avec Euro-Office"
+
+#. module: euro_office_templates
+#: model:ir.model.fields,field_description:euro_office_templates.field_euro_office_templates__template_model_id
+msgid "Select Model"
+msgstr "Sélectionner un modèle"
+
+#. module: euro_office_templates
+#. odoo-javascript
+#: code:addons/euro_office_templates/static/src/views/kanban/euro_office_dialog_help.xml:0
+msgid "Select Print with Euro-Office."
+msgstr "Sélectionnez Imprimer avec Euro-Office."
+
+#. module: euro_office_templates
+#: model_terms:ir.ui.view,arch_db:euro_office_templates.view_euro_office_form
+msgid ""
+"Select an existing template. Leave the field blank to create a blank "
+"template."
+msgstr "Sélectionnez un modèle existant. Laissez le champ vide pour créer un « modèle » vierge."
+
+#. module: euro_office_templates
+#: model:ir.model.fields,field_description:euro_office_templates.field_euro_office_demo_templates__selected_templates
+msgid "Selected Templates"
+msgstr "Modèles sélectionnés"
+
+#. module: euro_office_templates
+#. odoo-javascript
+#: code:addons/euro_office_templates/static/src/views/editor/euro_office_editor_export_data.xml:0
+msgid "Show sub-fields"
+msgstr "Afficher les sous-champs"
+
+#. module: euro_office_templates
+#: model:ir.model.fields,field_description:euro_office_templates.field_euro_office_templates__name
+msgid "Template Name"
+msgstr "Nom du modèle"
+
+#. module: euro_office_templates
+#: model_terms:ir.ui.view,arch_db:euro_office_templates.view_euro_office_form
+msgid "Template creation"
+msgstr "Création du modèle"
+
+#. module: euro_office_templates
+#: model_terms:ir.ui.view,arch_db:euro_office_templates.view_euro_office_form
+msgid "Template uploading"
+msgstr "Chargement du modèle"
+
+#. module: euro_office_templates
+#: model:ir.ui.menu,name:euro_office_templates.euro_office_submenu
+msgid "Templates"
+msgstr ""
+
+#. module: euro_office_templates
+#: model_terms:ir.ui.view,arch_db:euro_office_templates.res_config_settings_view_form
+msgid "Templates gallery"
+msgstr "Galerie de modèles"
+
+#. module: euro_office_templates
+#. odoo-javascript
+#: code:addons/euro_office_templates/static/src/views/kanban/euro_office_dialog_help.xml:0
+msgid ""
+"The Euro-Office Templates module allows you to create, manage, and use "
+"fillable PDF"
+msgstr "Le module Euro-Office Templates vous permet de créer, gérer et utiliser des PDF à remplir"
+
+#. module: euro_office_templates
+#. odoo-javascript
+#: code:addons/euro_office_templates/static/src/views/kanban/euro_office_dialog_help.xml:0
+msgid ""
+"This will generate a PDF document with your template, automatically filled "
+"with the corresponding record's data."
+msgstr "Cela générera un document PDF avec votre modèle, automatiquement rempli avec les données de l'enregistrement correspondant."
+
+#. module: euro_office_templates
+#. odoo-javascript
+#: code:addons/euro_office_templates/static/src/views/kanban/euro_office_dialog_help.xml:0
+msgid "To fill in a template with Odoo data:"
+msgstr "Pour remplir un modèle avec les données Odoo :"
+
+#. module: euro_office_templates
+#: model:ir.model.fields,field_description:euro_office_templates.field_euro_office_templates__file
+msgid "Upload an existing template"
+msgstr "Charger un modèle existant"
+
+#. module: euro_office_templates
+#. odoo-javascript
+#: code:addons/euro_office_templates/static/src/views/editor/euro_office_editor_export_data.xml:0
+msgid "Use a technical name"
+msgstr "Utiliser un nom technique"
+
+#. module: euro_office_templates
+#: model_terms:ir.ui.view,arch_db:euro_office_templates.view_euro_office_form
+msgid ""
+"Use this form to create a new fillable PDF template\n"
+"              for your Odoo modules. Start by entering a <span class=\"fw-bolder\">name </span> for\n"
+"              your template to easily identify it later in the Euro-Office Templates list."
+msgstr ""
+"Utilisez ce formulaire pour créer un nouveau modèle PDF\n"
+"              à remplir pour vos modules Odoo. Commencez par saisir un <span class=\"fw-bolder\">nom </span> pour\n"
+"              votre modèle afin de l'identifier facilement plus tard dans la liste des modèles Euro-Office."
+
+#. module: euro_office_templates
+#: model:res.groups,name:euro_office_templates.group_euro_office_templates_user
+msgid "User"
+msgstr "Utilisateur"
+
+#. module: euro_office_templates
+#. odoo-javascript
+#: code:addons/euro_office_templates/static/src/views/dialog/euro_office_dialog.js:0
+msgid ""
+"You don't have any templates yet. Please go to the Euro-Office Templates app "
+"to create a new template or ask your admin to create it."
+msgstr "Vous n'avez pas encore de modèles. Veuillez vous rendre sur l'application Euro-Office Templates pour créer un nouveau modèle ou demander à votre administrateur de le faire."
+
+#. module: euro_office_templates
+#. odoo-javascript
+#: code:addons/euro_office_templates/static/src/views/kanban/euro_office_dialog_help.xml:0
+msgid ""
+"for any installed Odoo module (e.g., Sales, Invoicing, CRM). These templates"
+" can then be filled in automatically with real-time data from your Odoo "
+"system — no manual input needed."
+msgstr "pour tout module Odoo installé (par ex. Ventes, Facturation, CRM). Ces modèles peuvent ensuite être remplis automatiquement avec les données en temps réel de votre système Odoo — aucune saisie manuelle nécessaire."
+
+#. module: euro_office_templates
+#. odoo-javascript
+#: code:addons/euro_office_templates/static/src/views/kanban/euro_office_dialog_help.xml:0
+msgid "templates"
+msgstr "modèles"

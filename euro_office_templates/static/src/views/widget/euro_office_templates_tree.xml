@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright (C) 2026 Ascensio System SIA -->
+<templates xml:space="preserve">
+    <t t-name="euro_office_templates.TemplatesTree" owl="1">
+    <div class="o-euro_office-templates-tree">
+      <t t-if="state.loading">
+        <div class="text-center p-4">
+          <i class="fa fa-refresh fa-spin" />
+          Loading templates...
+        </div>
+      </t>
+      <t t-else="">
+        <div class="o-euro_office-tree-list">
+          <t t-foreach="Object.values(state.structure)" t-as="category" t-key="category.model">
+            <div class="o-euro_office-list-item">
+              <h3 class="o-euro_office-item-header">
+                <t t-esc="category.name" />
+              </h3>
+              <div class="o-euro_office-item-body">
+                <t t-foreach="category.files" t-as="file" t-key="file.path">
+                  <div class="o-euro_office-body-template">
+                    <label>
+                      <input
+                        type="checkbox"
+                        class="o-euro_office-template-checkbox form-check-input"
+                        t-att-checked="state.selected.includes(file.path)"
+                        t-on-change="(ev) => this.toggleTemplate(file.path, ev.target.checked)"
+                      />
+                      <button class="btn btn-sm btn-link" t-on-click="() => this.previewTemplate(file.path)">
+                        <i class="fa fa-eye" />
+                      </button>
+                      <span t-esc="file.name" />
+                    </label>
+                  </div>
+                </t>
+              </div>
+            </div>
+          </t>
+        </div>
+      </t>
+    </div>
+  </t>
+</templates>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright (C) 2026 Ascensio System SIA -->
+<templates xml:space="preserve">
+    <t t-name="euro_office_templates.TemplateEditor" owl="1">
+    <html>
+      <head>
+        <meta charset="UTF-8" />
+        <title> Euro-Office </title>
+        <style>
+          html, body {
+            height: 100%;
+          }
+        </style>
+      </head>
+      <body class="o-euro_office-template">
+        <div class="o-euro_office-template-fields border-end">
+          <div class="o-euro_office-fields-title">
+            <span> Fields </span>
+          </div>
+          <hr class="o-euro_office-template-separator" />
+          <t t-if="state.resModel">
+            <ExportData resModel="state.resModel" hasLicense="state.hasLicense" />
+          </t>
+        </div>
+        <div class="o-euro_office-template-editor">
+          <div id="doceditor" />
+          <div id="error" class="w-25 m-auto my-5 py-5 d-flex flex-column d-none">
+            <img src="/euro_office_templates/static/svg/euro_office_logo.svg" alt="Euro-Office logo" />
+            <div class="my-3 alert alert-danger">
+              <p> Euro-Office cannot be reached. Please contact admin. </p>
+            </div>
+          </div>
+        </div>
+      </body>
+    </html>
+  </t>
+</templates>

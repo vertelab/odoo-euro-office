@@ -1,0 +1,5 @@
+<?xml version="1.0" ?>
+<!-- Copyright (C) 2026 Ascensio System SIA -->
+<odoo>
+  <function model="euro_office.odoo.templates" name="_create_demo_data" />
+</odoo>
