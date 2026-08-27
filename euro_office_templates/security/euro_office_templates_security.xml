@@ -36,7 +36,7 @@
   <!-- Access control rules -->
   <record id="access_euro_office_templates_user" model="ir.model.access">
     <field name="name">User Access</field>
-    <field name="model_id" ref="euro_office_templates.model_euro_office_templates" />
+    <field name="model_id" ref="euro_office_templates.model_euro_office_odoo_templates" />
     <field name="group_id" ref="group_euro_office_templates_user" />
     <field name="perm_read" eval="1" />
     <field name="perm_write" eval="0" />
@@ -46,7 +46,7 @@
 
   <record id="access_euro_office_templates_admin" model="ir.model.access">
     <field name="name">Administrator Access</field>
-    <field name="model_id" ref="euro_office_templates.model_euro_office_templates" />
+    <field name="model_id" ref="euro_office_templates.model_euro_office_odoo_templates" />
     <field name="group_id" ref="group_euro_office_templates_admin" />
     <field name="perm_read" eval="1" />
     <field name="perm_write" eval="1" />

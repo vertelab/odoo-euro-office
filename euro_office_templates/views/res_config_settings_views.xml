@@ -32,7 +32,7 @@
     <field name="priority" eval="10" />
     <field name="inherit_id" ref="base.res_config_settings_view_form" />
     <field name="arch" type="xml">
-      <xpath expr="//block[@id='o_euro_office_settings_common']" position="after">
+      <xpath expr="//block[@name='euro_office_behavior']" position="after">
         <block title="Euro-Office Templates" name="euro_office_templates">
           <setting string="Templates gallery">
             <div class="text-muted">

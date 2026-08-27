@@ -300,13 +300,13 @@ msgid "No match found."
 msgstr "Nenhuma correspondência encontrada."
 
 #. module: euro_office_templates
-#: model:ir.model,name:euro_office_templates.model_euro_office_demo_templates
+#: model:ir.model,name:euro_office_templates.model_euro_office_odoo_demo_templates
 msgid "Euro-Office Demo Templates"
 msgstr "Templates de demonstração do Euro-Office"
 
 #. module: euro_office_templates
 #: model:ir.actions.act_window,name:euro_office_templates.action_euro_office_templates
-#: model:ir.model,name:euro_office_templates.model_euro_office_templates
+#: model:ir.model,name:euro_office_templates.model_euro_office_odoo_templates
 #: model:ir.ui.menu,name:euro_office_templates.euro_office_menu
 #: model_terms:ir.ui.view,arch_db:euro_office_templates.res_config_settings_view_form
 msgid "Euro-Office Templates"
