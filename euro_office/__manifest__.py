@@ -4,7 +4,7 @@
     "summary": "Edit and collaborate on office files within Odoo Documents.",
     "description": "Connector for Euro-Office DocumentServer (https://github.com/Euro-Office/DocumentServer). Fork of the ONLYOFFICE Odoo connector by Ascensio System SIA (LGPL-3), rebranded and maintained by Innolabs. The Euro-Office app allows users to edit and collaborate on office files within Odoo Documents using Euro-Office Docs. You can work with text documents, spreadsheets, and presentations, co-author documents in real time using two co-editing modes (Fast and Strict), Track Changes, comments, and built-in chat.",  # noqa: E501
     "author": "Innolabs.dev",
-    "website": "https://github.com/innolabsdev/euro_office_odoo",
+    "website": "https://vertel.se/apps/odoo-euro-office/euro_office",
     "category": "Productivity",
     "version": "18.0.6.3.4",
     "depends": ["base", "mail"],
