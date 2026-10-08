@@ -6,7 +6,7 @@
     'description': """
 Lär dig redigera Office-dokument direkt i arbetsytan, utan att ladda ner och upp.
 """,
-    'author': 'Vertel AB',
+    'author': 'Vertel Sverige AB',
     'website': 'https://vertel.se',
     'license': 'LGPL-3',
     'category': 'Website/eLearning',

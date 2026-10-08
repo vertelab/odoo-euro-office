@@ -4,8 +4,8 @@
     "name": "Euro-Office Templates",
     "summary": "Automate form creation with inserting fields from Odoo in templates.",
     "description": "Work with fillable templates in Odoo using Euro-Office. Create templates based on the data and fields available in Odoo, fill them out and print with several clicks.",  # noqa: E501
-    "author": "Vertel AB (port av ONLYOFFICE Templates, Ascensio System SIA)",
-    "website": "https://vertel.se/apps/odoo-euro-office/euro_office_templates",
+    "author": "Vertel Sverige AB (port av ONLYOFFICE Templates, Ascensio System SIA)",
+    "website": "https://github.com/vertelab/odoo-euro-office",
     "category": "Productivity",
     "version": "18.0.3.4.2",
     "license": "LGPL-3",
